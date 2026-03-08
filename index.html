@@ -6,291 +6,346 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>SAIPRASAD BRICKS | Family Brick Manufacturer</title>
+<title>Brick Manufacturer in Beed | SAIPRASAD BRICKS</title>
 
 <meta name="description" content="Saiprasad Bricks is a premium brick manufacturer in Georai Beed Maharashtra supplying red clay bricks fly ash bricks and wire cut bricks across Marathwada.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<script defer src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+
 <style>
 
-/* ---------- GLOBAL ---------- */
+:root{
+
+--clay:#b04122;
+--orange:#e36d2b;
+--gold:#ffd700;
+--dark:#1c1208;
+
+}
 
 *{
+box-sizing:border-box;
 margin:0;
 padding:0;
-box-sizing:border-box;
 }
 
 body{
+
 font-family:Poppins;
-background:#0c0705;
-color:#ffffff;
+background:#111;
+color:#fff;
 line-height:1.6;
+
 }
 
-/* ---------- NAVBAR ---------- */
+/* NAVBAR */
 
 nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 30px;
-background:#120b08;
-position:sticky;
+
+position:fixed;
 top:0;
-z-index:1000;
-}
-
-.logo{
-font-family:"Playfair Display";
-font-size:22px;
-color:#E8B45E;
-font-weight:bold;
-}
-
-nav ul{
+width:100%;
+background:#1c1208;
 display:flex;
-list-style:none;
-gap:20px;
+justify-content:center;
+gap:30px;
+padding:12px;
+z-index:1000;
+
 }
 
 nav a{
-color:white;
+color:#ffd700;
 text-decoration:none;
-font-size:14px;
+font-weight:500;
 }
 
-/* ---------- HERO ---------- */
+/* HERO */
 
-.hero{
-height:90vh;
+#hero{
+
+height:100vh;
 display:flex;
-flex-direction:column;
-justify-content:center;
 align-items:center;
+justify-content:center;
 text-align:center;
-padding:20px;
-
 background:
 linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
-url("https://images.unsplash.com/photo-1599420186946-7bcb8e40c1c9");
+url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800");
 
 background-size:cover;
 background-position:center;
+
 }
 
-.hero h1{
-font-family:"Playfair Display";
-font-size:48px;
-color:#E8B45E;
-margin-bottom:15px;
-}
+.hero-content{
 
-.hero p{
 max-width:600px;
-margin-bottom:25px;
+
 }
 
-.hero button{
-padding:12px 30px;
-background:#E8B45E;
-border:none;
-border-radius:6px;
-font-weight:600;
-cursor:pointer;
-}
+.hero-content h1{
 
-/* ---------- SECTIONS ---------- */
-
-.section{
-padding:70px 20px;
-text-align:center;
-}
-
-.section h2{
 font-family:"Playfair Display";
-font-size:32px;
-color:#E8B45E;
-margin-bottom:20px;
+font-size:52px;
+color:#ffd700;
+
 }
 
-/* ---------- PRODUCT CARDS ---------- */
+.tagline{
+
+margin:15px 0;
+color:#ffa959;
+
+}
+
+.cta{
+
+padding:14px 32px;
+border:none;
+background:#ffd700;
+color:#7e3e21;
+font-weight:bold;
+border-radius:40px;
+cursor:pointer;
+
+}
+
+/* SECTION */
+
+section{
+
+padding:80px 20px;
+text-align:center;
+
+}
+
+section h2{
+
+font-family:"Playfair Display";
+color:#ffd700;
+margin-bottom:20px;
+
+}
+
+/* PRODUCTS */
 
 .products{
+
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 max-width:1000px;
 margin:auto;
+
 }
 
 .card{
-background:#1a100c;
+
+background:#2b1a0e;
 padding:25px;
 border-radius:10px;
-transition:0.3s;
+transition:.3s;
+
 }
 
 .card:hover{
-transform:translateY(-6px);
+
+transform:translateY(-8px);
+
 }
 
-/* ---------- ORDER ---------- */
+/* 3D */
 
-.order input,
-.order textarea{
+#brick3d canvas{
 
-width:90%;
+width:260px !important;
+height:160px !important;
+background:#221406;
+border-radius:10px;
+
+}
+
+/* ORDER */
+
+#order-form{
+
+display:flex;
+flex-direction:column;
+gap:10px;
 max-width:400px;
-margin:10px auto;
-padding:10px;
-border-radius:5px;
-border:none;
-display:block;
+margin:auto;
 
 }
 
-.order button{
-padding:12px 30px;
-background:#E8B45E;
+#order-form input,
+#order-form textarea{
+
+padding:10px;
+border-radius:6px;
+border:1px solid #b04122;
+background:#1b1209;
+color:white;
+
+}
+
+#order-form button{
+
+background:#ffd700;
 border:none;
+padding:12px;
 border-radius:6px;
 cursor:pointer;
+font-weight:bold;
+
 }
 
-/* ---------- CONTACT ---------- */
+/* CONTACT */
 
-.contact a{
-display:block;
-font-size:18px;
-color:#E8B45E;
+.phone-list{
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+
+}
+
+.phone-link{
+
+color:#ffd700;
 text-decoration:none;
-margin:8px;
+border:1px solid #ffd700;
+padding:10px 18px;
+border-radius:8px;
+
 }
 
-/* ---------- MAP ---------- */
+/* MAP */
 
-.map iframe{
+iframe{
+
 width:100%;
-height:300px;
-border:0;
-margin-top:20px;
+max-width:450px;
+height:250px;
+border-radius:10px;
+border:none;
+
 }
 
-/* ---------- FOOTER ---------- */
+/* FOOTER */
 
 footer{
-background:#080404;
-padding:20px;
+
+background:#1c1208;
 text-align:center;
+padding:30px;
 margin-top:40px;
-font-size:14px;
+
 }
 
-/* ---------- MOBILE NAV ---------- */
+/* WHATSAPP FLOAT */
+
+.whatsapp{
+
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+color:white;
+box-shadow:0 6px 20px rgba(0,0,0,.4);
+
+}
 
 @media(max-width:700px){
 
-nav ul{
-flex-direction:column;
-gap:10px;
-}
-
-.hero h1{
+.hero-content h1{
 font-size:36px;
 }
 
 }
 
 </style>
-</head>
 
+</head>
 
 
 <body>
 
-
-<!-- NAVIGATION -->
-
 <nav>
 
-<div class="logo">SAIPRASAD BRICKS</div>
-
-<ul>
-
-<li><a href="#about">About</a></li>
-<li><a href="#products">Products</a></li>
-<li><a href="#order">Order</a></li>
-<li><a href="#contact">Contact</a></li>
-
-</ul>
+<a href="#hero">Home</a>
+<a href="#legacy">Legacy</a>
+<a href="#products">Products</a>
+<a href="#order">Order</a>
+<a href="#contact">Contact</a>
 
 </nav>
 
 
+<section id="hero">
 
-<!-- HERO -->
+<div class="hero-content">
 
-<section class="hero">
+<h1>SAIPRASAD BRICKS</h1>
 
-<h1>Strength Built From Clay</h1>
+<div class="tagline">
+Family Brick Manufacturer Since 2010
+</div>
 
-<p>
-Family brick manufacturer supplying premium bricks across Beed,
-Aurangabad and Marathwada since 2010.
-</p>
+<a href="#order"><button class="cta">Order Bricks</button></a>
 
-<button onclick="scrollToOrder()">Order Bricks</button>
+</div>
 
 </section>
 
 
-
-<!-- ABOUT -->
-
-<section class="section" id="about">
+<section id="legacy">
 
 <h2>Our Legacy</h2>
 
-<p style="max-width:700px;margin:auto">
+<p>
 
-SAIPRASAD BRICKS is a family-run brick manufacturing business
-located in Georai, Beed, Maharashtra.
+Saiprasad Bricks is a trusted brick manufacturer in Georai Beed Maharashtra.
 
-For years our kiln has produced strong, reliable bricks used in
-homes, schools, and construction projects across the region.
-
-Every brick we fire represents craftsmanship, experience,
-and commitment to quality.
+For more than 15 years we have supplied high-strength kiln fired bricks to
+contractors, builders and construction projects across Marathwada.
 
 </p>
 
 </section>
 
 
+<section id="products">
 
-<!-- PRODUCTS -->
-
-<section class="section" id="products">
-
-<h2>Our Brick Types</h2>
+<h2>Our Products</h2>
 
 <div class="products">
 
 <div class="card">
 <h3>Red Clay Bricks</h3>
-<p>Traditional kiln-fired bricks for strong construction.</p>
+<p>Traditional kiln fired bricks known for durability.</p>
 </div>
 
 <div class="card">
 <h3>Fly Ash Bricks</h3>
-<p>Eco-friendly bricks with high compressive strength.</p>
+<p>Eco friendly bricks with high compressive strength.</p>
 </div>
 
 <div class="card">
 <h3>Wire Cut Bricks</h3>
-<p>Premium machine-cut bricks for modern architecture.</p>
+<p>Machine cut bricks for precise construction.</p>
 </div>
 
 </div>
@@ -298,59 +353,70 @@ and commitment to quality.
 </section>
 
 
+<section id="brick3d">
 
-<!-- ORDER FORM -->
+<h2>Our Craftsmanship</h2>
 
-<section class="section order" id="order">
+<canvas id="brick-canvas"></canvas>
 
-<h2>Place Order</h2>
+</section>
 
-<input id="name" placeholder="Your Name">
 
-<input id="qty" placeholder="Quantity of bricks">
+<section id="order">
+
+<h2>Order Bricks</h2>
+
+<form id="order-form">
+
+<input type="text" id="name" placeholder="Name" required>
+
+<input type="number" id="qty" placeholder="Quantity" required>
 
 <textarea id="address" placeholder="Delivery Address"></textarea>
 
-<button onclick="sendOrder()">Send Order via WhatsApp</button>
+<button type="submit">
+Send Order via WhatsApp
+</button>
+
+</form>
 
 </section>
 
 
-
-<!-- CONTACT -->
-
-<section class="section contact" id="contact">
+<section id="contact">
 
 <h2>Contact Us</h2>
 
-<a href="tel:8766501617">📞 8766501617</a>
+<div class="phone-list">
 
-<a href="tel:9509100200">📞 9509100200</a>
+<a class="phone-link" href="tel:+918766501617">8766501617</a>
 
-<a href="tel:9504040509">📞 9504040509</a>
+<a class="phone-link" href="tel:+919509100200">9509100200</a>
 
-<p>Georai, Beed, Maharashtra</p>
-
-<div class="map">
-
-<iframe
-src="https://www.google.com/maps?q=Georai%20Beed&output=embed"
-loading="lazy">
-</iframe>
+<a class="phone-link" href="tel:+919504040509">9504040509</a>
 
 </div>
 
-</section>
+<br>
 
+<iframe
+src="https://www.google.com/maps?q=Georai%20Beed&output=embed">
+</iframe>
+
+</section>
 
 
 <footer>
 
-© <span id="year"></span> SAIPRASAD BRICKS  
-Premium Family Brick Manufacturer
+SAIPRASAD BRICKS  
+© <span id="year"></span>
 
 </footer>
 
+
+<a class="whatsapp" href="https://wa.me/919509100200" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
 
 
 <script>
@@ -360,43 +426,68 @@ Premium Family Brick Manufacturer
 document.getElementById("year").textContent=new Date().getFullYear();
 
 
-/* SCROLL */
-
-function scrollToOrder(){
-
-document.getElementById("order").scrollIntoView({
-behavior:"smooth"
-});
-
-}
-
-
 /* WHATSAPP ORDER */
 
-function sendOrder(){
+document.getElementById("order-form").addEventListener("submit",function(e){
 
-let name=document.getElementById("name").value;
+e.preventDefault()
 
-let qty=document.getElementById("qty").value;
+let name=document.getElementById("name").value
+let qty=document.getElementById("qty").value
+let address=document.getElementById("address").value
 
-let address=document.getElementById("address").value;
-
-let msg=`Brick Order
+let msg=`Hello Saiprasad Bricks.
 
 Name: ${name}
-
 Quantity: ${qty}
+Address: ${address}`
 
-Address: ${address}
+window.open("https://wa.me/919509100200?text="+encodeURIComponent(msg))
 
-Sent from Saiprasad Bricks website`;
+})
 
-window.open("https://wa.me/919509100200?text="+encodeURIComponent(msg));
+
+/* THREEJS BRICK */
+
+const canvas=document.getElementById("brick-canvas")
+
+const scene=new THREE.Scene()
+
+const camera=new THREE.PerspectiveCamera(40,260/160,0.1,100)
+
+camera.position.z=12
+
+const renderer=new THREE.WebGLRenderer({canvas})
+
+renderer.setSize(260,160)
+
+const geometry=new THREE.BoxGeometry(7,2.5,3.5)
+
+const material=new THREE.MeshPhongMaterial({color:0xb04122})
+
+const brick=new THREE.Mesh(geometry,material)
+
+scene.add(brick)
+
+const light=new THREE.PointLight(0xffaa66,1.5)
+
+light.position.set(10,10,10)
+
+scene.add(light)
+
+function animate(){
+
+brick.rotation.y+=0.01
+
+renderer.render(scene,camera)
+
+requestAnimationFrame(animate)
 
 }
 
-</script>
+animate()
 
+</script>
 
 </body>
 </html>
