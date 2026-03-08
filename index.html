@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>SAIPRASAD BRICKS | Family Legacy Since 2010</title>
+<title>SAIPRASAD BRICKS | Family Brick Manufacturer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<meta name="description" content="Saiprasad Bricks is a premium brick manufacturer in Georai Beed Maharashtra supplying red clay bricks fly ash bricks and wire cut bricks across Marathwada.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
 <style>
 
-:root{
-
---earth:#7B3F00;
---clay:#C75B12;
---gold:#E8B45E;
---bg:#0c0705;
---light:#f7efe5;
-
-}
+/* ---------- GLOBAL ---------- */
 
 *{
 margin:0;
@@ -27,189 +23,183 @@ box-sizing:border-box;
 }
 
 body{
-
-font-family:"Poppins",sans-serif;
-background:var(--bg);
-color:var(--light);
-overflow-x:hidden;
-
+font-family:Poppins;
+background:#0c0705;
+color:#ffffff;
+line-height:1.6;
 }
 
-/* NAVBAR */
+/* ---------- NAVBAR ---------- */
 
 nav{
-
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 60px;
-background:rgba(0,0,0,.4);
-backdrop-filter:blur(10px);
-position:fixed;
-width:100%;
-z-index:999;
-
+padding:15px 30px;
+background:#120b08;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
 .logo{
-
 font-family:"Playfair Display";
-font-size:24px;
-font-weight:700;
-letter-spacing:2px;
-color:var(--gold);
-
+font-size:22px;
+color:#E8B45E;
+font-weight:bold;
 }
 
 nav ul{
-
 display:flex;
-gap:30px;
 list-style:none;
-
+gap:20px;
 }
 
 nav a{
-
-text-decoration:none;
 color:white;
-font-weight:500;
-
+text-decoration:none;
+font-size:14px;
 }
 
-/* HERO */
+/* ---------- HERO ---------- */
 
 .hero{
-
-height:100vh;
+height:90vh;
 display:flex;
 flex-direction:column;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
-background:
+padding:20px;
 
-linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.9)),
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
 url("https://images.unsplash.com/photo-1599420186946-7bcb8e40c1c9");
 
 background-size:cover;
 background-position:center;
-
 }
 
 .hero h1{
-
 font-family:"Playfair Display";
-font-size:72px;
-color:var(--gold);
-animation:fadeUp 1.5s;
-
+font-size:48px;
+color:#E8B45E;
+margin-bottom:15px;
 }
 
 .hero p{
-
-margin-top:20px;
-max-width:700px;
-line-height:1.7;
-opacity:.9;
-
+max-width:600px;
+margin-bottom:25px;
 }
 
-.cta{
-
-margin-top:30px;
-padding:14px 36px;
-background:linear-gradient(135deg,var(--clay),var(--gold));
+.hero button{
+padding:12px 30px;
+background:#E8B45E;
 border:none;
-border-radius:8px;
+border-radius:6px;
 font-weight:600;
 cursor:pointer;
-color:black;
-
 }
 
-/* SECTIONS */
+/* ---------- SECTIONS ---------- */
 
 .section{
-
-padding:120px 20px;
+padding:70px 20px;
 text-align:center;
-
 }
 
 .section h2{
-
 font-family:"Playfair Display";
-font-size:42px;
+font-size:32px;
+color:#E8B45E;
 margin-bottom:20px;
-color:var(--gold);
-
 }
 
-/* CARDS */
+/* ---------- PRODUCT CARDS ---------- */
 
 .products{
-
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
+gap:25px;
 max-width:1000px;
 margin:auto;
-
 }
 
 .card{
-
 background:#1a100c;
-padding:30px;
+padding:25px;
 border-radius:10px;
-transition:.4s;
-border:1px solid rgba(255,255,255,.08);
-
+transition:0.3s;
 }
 
 .card:hover{
+transform:translateY(-6px);
+}
 
-transform:translateY(-10px);
-box-shadow:0 20px 40px rgba(0,0,0,.5);
+/* ---------- ORDER ---------- */
+
+.order input,
+.order textarea{
+
+width:90%;
+max-width:400px;
+margin:10px auto;
+padding:10px;
+border-radius:5px;
+border:none;
+display:block;
 
 }
 
-/* CONTACT */
-
-.contact{
-
-display:flex;
-flex-direction:column;
-gap:15px;
-font-size:20px;
-
+.order button{
+padding:12px 30px;
+background:#E8B45E;
+border:none;
+border-radius:6px;
+cursor:pointer;
 }
+
+/* ---------- CONTACT ---------- */
 
 .contact a{
-
-color:var(--gold);
+display:block;
+font-size:18px;
+color:#E8B45E;
 text-decoration:none;
-
+margin:8px;
 }
 
-/* FOOTER */
+/* ---------- MAP ---------- */
+
+.map iframe{
+width:100%;
+height:300px;
+border:0;
+margin-top:20px;
+}
+
+/* ---------- FOOTER ---------- */
 
 footer{
-
-margin-top:60px;
-padding:30px;
-text-align:center;
 background:#080404;
-
+padding:20px;
+text-align:center;
+margin-top:40px;
+font-size:14px;
 }
 
-/* ANIMATIONS */
+/* ---------- MOBILE NAV ---------- */
 
-@keyframes fadeUp{
+@media(max-width:700px){
 
-0%{opacity:0;transform:translateY(40px);}
-100%{opacity:1;transform:translateY(0);}
+nav ul{
+flex-direction:column;
+gap:10px;
+}
+
+.hero h1{
+font-size:36px;
+}
 
 }
 
@@ -217,40 +207,47 @@ background:#080404;
 </head>
 
 
+
 <body>
 
+
+<!-- NAVIGATION -->
 
 <nav>
 
 <div class="logo">SAIPRASAD BRICKS</div>
 
 <ul>
-<li><a href="#about">Legacy</a></li>
+
+<li><a href="#about">About</a></li>
 <li><a href="#products">Products</a></li>
+<li><a href="#order">Order</a></li>
 <li><a href="#contact">Contact</a></li>
+
 </ul>
 
 </nav>
 
 
 
+<!-- HERO -->
+
 <section class="hero">
 
-<h1>Built On Family Legacy</h1>
+<h1>Strength Built From Clay</h1>
 
 <p>
-
-For generations our family has shaped clay into strength.
-Every brick we fire carries the heat of tradition and the
-precision of modern craftsmanship.
-
+Family brick manufacturer supplying premium bricks across Beed,
+Aurangabad and Marathwada since 2010.
 </p>
 
-<button class="cta">Order Bricks</button>
+<button onclick="scrollToOrder()">Order Bricks</button>
 
 </section>
 
 
+
+<!-- ABOUT -->
 
 <section class="section" id="about">
 
@@ -258,12 +255,14 @@ precision of modern craftsmanship.
 
 <p style="max-width:700px;margin:auto">
 
-SAIPRASAD BRICKS is a family-driven brick manufacturing business
-based in Georai, Beed, Maharashtra.
+SAIPRASAD BRICKS is a family-run brick manufacturing business
+located in Georai, Beed, Maharashtra.
 
-Our kiln has served contractors, farmers, builders and communities
-for over a decade. From small homes to large projects,
-our bricks carry the strength of experience and the pride of craftsmanship.
+For years our kiln has produced strong, reliable bricks used in
+homes, schools, and construction projects across the region.
+
+Every brick we fire represents craftsmanship, experience,
+and commitment to quality.
 
 </p>
 
@@ -271,9 +270,11 @@ our bricks carry the strength of experience and the pride of craftsmanship.
 
 
 
+<!-- PRODUCTS -->
+
 <section class="section" id="products">
 
-<h2>Our Brick Range</h2>
+<h2>Our Brick Types</h2>
 
 <div class="products">
 
@@ -289,7 +290,7 @@ our bricks carry the strength of experience and the pride of craftsmanship.
 
 <div class="card">
 <h3>Wire Cut Bricks</h3>
-<p>Premium bricks for modern architectural finishes.</p>
+<p>Premium machine-cut bricks for modern architecture.</p>
 </div>
 
 </div>
@@ -298,11 +299,29 @@ our bricks carry the strength of experience and the pride of craftsmanship.
 
 
 
-<section class="section" id="contact">
+<!-- ORDER FORM -->
 
-<h2>Contact Our Yard</h2>
+<section class="section order" id="order">
 
-<div class="contact">
+<h2>Place Order</h2>
+
+<input id="name" placeholder="Your Name">
+
+<input id="qty" placeholder="Quantity of bricks">
+
+<textarea id="address" placeholder="Delivery Address"></textarea>
+
+<button onclick="sendOrder()">Send Order via WhatsApp</button>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section class="section contact" id="contact">
+
+<h2>Contact Us</h2>
 
 <a href="tel:8766501617">📞 8766501617</a>
 
@@ -310,13 +329,16 @@ our bricks carry the strength of experience and the pride of craftsmanship.
 
 <a href="tel:9504040509">📞 9504040509</a>
 
+<p>Georai, Beed, Maharashtra</p>
+
+<div class="map">
+
+<iframe
+src="https://www.google.com/maps?q=Georai%20Beed&output=embed"
+loading="lazy">
+</iframe>
+
 </div>
-
-<p style="margin-top:20px">
-
-Georai, Beed, Maharashtra
-
-</p>
 
 </section>
 
@@ -325,7 +347,7 @@ Georai, Beed, Maharashtra
 <footer>
 
 © <span id="year"></span> SAIPRASAD BRICKS  
-Family Legacy Brick Manufacturer
+Premium Family Brick Manufacturer
 
 </footer>
 
@@ -333,7 +355,45 @@ Family Legacy Brick Manufacturer
 
 <script>
 
+/* YEAR */
+
 document.getElementById("year").textContent=new Date().getFullYear();
+
+
+/* SCROLL */
+
+function scrollToOrder(){
+
+document.getElementById("order").scrollIntoView({
+behavior:"smooth"
+});
+
+}
+
+
+/* WHATSAPP ORDER */
+
+function sendOrder(){
+
+let name=document.getElementById("name").value;
+
+let qty=document.getElementById("qty").value;
+
+let address=document.getElementById("address").value;
+
+let msg=`Brick Order
+
+Name: ${name}
+
+Quantity: ${qty}
+
+Address: ${address}
+
+Sent from Saiprasad Bricks website`;
+
+window.open("https://wa.me/919509100200?text="+encodeURIComponent(msg));
+
+}
 
 </script>
 
